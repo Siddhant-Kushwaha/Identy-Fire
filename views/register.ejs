@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="anime.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <video src="" autoplay=True></video>
+    <form action="/register" method="POST" name="form1" class="form1">
+        <input type="text" name="name" id="">
+        <input type="text" name="phone" id="">
+        <input type="text" name="enroll" id="">
+        <input type="text" name="image" class="hidden-field" style="display:none">
+        <input type="button" value="" class="submitBtn">
+    </form> -->
+
+    <div class="body">
+        <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#afafaf"/>
+          </svg>
+        <div class="particle" id="particles-js"></div>
+        <!-- <img src="frame.png" alt="" class="png1">
+        <img src="frame2.png" alt="" class="png2"> -->
+        <div class="container">
+            
+            <div class="form">
+                <h1>REGISTER</h1>
+                <form name="form1" class="form1" action="/register" method='POST'>
+                    <!-- <input type="file" name="image1" id="1"> -->
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <label for="enroll">Phone:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone">
+                    <label for="enroll">Enroll:</label>
+                    <input type="text" name="enroll" id="enroll" placeholder="Enroll">
+                    <input type="text" name="image" class="hidden-field" style="display:none">
+                </form>
+                <div class="button-box">
+                    <button class="submitBtn" id="submitBtn" value="submitBtn">Submit</button>
+                </div>
+                <div class="result"></div>
+            </div>
+            <div class="video-container">
+                <video src="" autoplay=true></video>
+                <div class="overlay"></div>
+            </div>
+        </div>  
+    </div>  
+    <script src="script2.js"></script>
+</body>
+</html>

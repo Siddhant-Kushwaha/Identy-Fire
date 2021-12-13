@@ -1,0 +1,24 @@
+{
+  "name": "client-side",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.1.4",
+    "ejs": "^3.1.6",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "firebase-admin": "^10.0.0",
+    "googleapis": "^92.0.0",
+    "method-override": "^3.0.0",
+    "node-fetch": "^3.1.0",
+    "pickle": "^0.2.0",
+    "picklejs": "^0.101.0"
+  }
+}

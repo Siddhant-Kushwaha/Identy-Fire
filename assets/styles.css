@@ -1,0 +1,206 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    outline:0;
+}
+
+
+.wave-top {
+    transform:rotateX(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+html{
+    font-size:10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+    padding:1rem 8rem;
+    /* background:linear-gradient(45deg,rgb(46, 0, 47),rgb(0, 0, 22)); */
+    /* background:conic-gradient(from 300deg at 100% 0%,#000b3b,rgb(12, 1, 107),rgb(0, 0, 173),rgb(0, 0, 0)); */
+    background:black;
+    /* background:url('back6.jpg'); */
+    background-size: cover;
+    background-repeat:no-repeat;
+    color:#505050;
+}
+
+/* .png2{
+    position:absolute;
+    top:40px;
+    right:50px;
+    width:300px;
+}
+
+.png1{
+    position:absolute;
+    bottom:0px;
+    right:30%;
+    width:300px;
+} */
+
+.video-container{
+    /* background:black; */
+    margin-right:3rem;
+    /* padding: 1rem; */
+    position:relative;
+    width:500px;
+    height:375px;
+    overflow:hidden;
+    border-radius:1rem;
+}
+
+.container{
+    display:flex;
+    padding:4rem;
+    justify-content: space-between;
+}
+
+video{
+    border-radius:1rem;
+    width:100%;
+    height:100%;
+    /* border:4px solid rgb(0, 0, 54); */
+    border:3px solid white;
+    overflow:hidden;
+}
+.result{
+    font-size:3rem;
+    font-weight:bold;
+    /* color:greenyellow; */
+}
+canvas{
+    overflow:visible;
+}
+
+.overlay{
+    z-index:999;
+    position:absolute;
+    top:-100px;
+    width:100%;
+    height:10%;
+    border-bottom:1px solid white;
+    background:linear-gradient(to top,rgba(0, 186, 243, 0.555),rgba(0, 0, 0, 0));
+    animation:scan 5s infinite;
+}
+
+.form1 label{
+    /* background-image:linear-gradient(45deg,rgb(243, 1, 243),rgb(255, 136, 0)); */
+  
+    /* background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    background-position:right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; */
+    color:rgb(202, 202, 202);
+
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+    font-weight: 700;
+    letter-spacing:.1rem;
+    display:inline-block;
+}
+
+.particle{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+}
+
+.form1 input:focus,.form1 input:active{
+    border:1px solid cyan;
+}
+
+.form1 input{
+    width:100%;
+    color:white;
+    padding:1rem;
+    border-radius:1rem;
+    border:1px solid rgb(0, 0, 34);
+    margin-bottom:2rem;
+    background:rgba(0, 0, 0, 0.452);
+}
+
+.form{
+    /* width:40%; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:40%;
+    background:linear-gradient(45deg,rgba(49, 49, 49, 0.055),rgba(173, 173, 173, 0.281));
+    backdrop-filter: blur(1rem);
+    border-radius:1rem;
+    padding:3rem 5rem;
+}
+
+.form h1{
+    letter-spacing: .2rem;
+    font-weight:900;
+    background-image:linear-gradient(45deg,rgb(171, 1, 187),rgb(255, 0, 179),rgb(245, 125, 46));
+  
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size:2.7rem;
+    color:rgb(0, 225, 255);
+    margin-bottom:2rem;
+}
+
+.button-box{
+    /* margin-top:1rem; */
+    display:flex;
+}
+
+.submitBtn:hover{
+    background-size:100%;
+    background-position:left;
+}
+
+.registerBtn:hover{
+    background-size:100%;
+    background-position:left;
+}
+
+.submitBtn,.registerBtn{
+    cursor:pointer;
+    padding:1rem 1.7rem;
+    margin-right:1.6rem;
+    background-image:linear-gradient(45deg,rgb(171, 1, 187),rgb(255, 0, 179),rgb(245, 125, 46));
+    color:white;
+    border:none;
+    border-radius:5rem;
+    background-size:200%;
+    background-position:right;
+    transition:.5s;
+}
+
+.result{
+    align-content: flex-end;
+}
+
+@keyframes scan{
+    80%{
+        height:20%;
+    }
+    100%{
+        height:1%;
+        top:100%;
+        bottom:0;
+    }
+}
